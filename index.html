@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lakehouse ACUAMED</title>
+    <meta
+      name="description"
+      content="Web interactiva que reproduce íntegramente el documento 'guion para la reunión' para ACUAMED."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS ha sido eliminado para evitar conflictos con el nuevo diseño -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-dark text-muted">
+    <!-- ======================= HEADER ======================= -->
+    <header class="site-header">
+      <div class="wrap mx-auto px-6 py-3 flex items-center justify-between">
+        <strong class="text-xl font-bold text-light">Mindden · ACUAMED</strong>
+        <nav class="ml-auto hidden md:flex gap-2">
+          <a href="#sobre">Sobre nosotros</a>
+          <a href="#intro">Introducción</a>
+          <a href="#arquitectura">Arquitectura</a>
+          <a href="#casos">Casos de uso</a>
+          <a href="#kpis">KPIs</a>
+          <a href="#gobernanza">Gobernanza</a>
+          <a href="#escalabilidad">Escalabilidad</a>
+          <a href="#cierre">Cierre</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ======================= HERO ======================= -->
+    <header class="hero border-b border-border-color section-fade-in">
+      <div class="wrap">
+        <div
+          class="mx-auto bg-card rounded-full h-16 w-16 flex items-center justify-center mb-6 shadow-lg border border-border-color"
+        >
+          <i data-lucide="database" class="text-accent-blue h-8 w-8"></i>
+        </div>
+        <h4>Lakehouse ACUAMED: Gobernanza y Valor</h4>
+        <p class="mt-4 text-xl md:text-2xl text-muted leading-relaxed">
+          “El Lakehouse no es solo una arquitectura tecnológica, es la garantía
+          de independencia, transparencia y valor medible: ahorros energéticos
+          verificables, inversiones priorizadas con trazabilidad y pleno
+          cumplimiento normativo y sanitario.”
+        </p>
+        <div class="flex flex-wrap gap-3 mt-8 justify-center">
+          <span class="pill">Datos unificados</span>
+          <span class="pill">KPIs auditables</span>
+          <span class="pill">ENS · ISO 27001 · ISO 55001</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-wrapper" id="sobrewrapper">
+        <section
+          id="sobre"
+          aria-labelledby="sobre-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="sobre-title">Sobre nosotros</h2>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop"
+                alt="Equipo de Mindden trabajando"
+                class="rounded-lg shadow-lg w-full"
+              />
+            </div>
+            <div>
+              <h4 class="text-light mt-6 mb-2 text-lg">¿Quiénes somos?</h4>
+              <p>
+                Mindden es una empresa alicantina experta en el servicio de
+                desarrollo de soluciones IT. En 2016 arrancamos con el objetivo
+                de poner a disposición de nuestros partners el desarrollo y la
+                implementación de soluciones digitales.
+              </p>
+
+              <h4 class="text-light mt-6 mb-2 text-lg">Visión</h4>
+              <p>
+                Acompañamos a nuestros partners a convertirse líderes de su
+                sector a través de la tecnología. Mejorar un mundo digital
+                liderado por nuestros partners.
+              </p>
+
+              <h4 class="text-light mt-6 mb-2 text-lg">Misión</h4>
+              <p>
+                Llevar a cabo la definición de los procesos, desarrollo e
+                integración de soluciones necesarias para:
+              </p>
+              <ul class="list-none space-y-2 pl-0 mt-4">
+                <li class="flex items-center">
+                  <i
+                    data-lucide="check"
+                    class="inline h-5 w-5 mr-3 text-accent-blue flex-shrink-0"
+                  ></i
+                  >Alcanzar el máximo potencial de nuestros clientes.
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-lucide="check"
+                    class="inline h-5 w-5 mr-3 text-accent-blue flex-shrink-0 mt-1"
+                  ></i
+                  >Abordar con éxito la transformación y adaptación de nuestros
+                  clientes/partners/ las empresas al modelo/negocio digital.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="text-light mt-6 mb-2 text-lg">
+            Nuestra propuesta de valor
+          </h4>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8"
+          >
+            <div class="card text-center items-center">
+              <svg
+                class="h-12 w-12 mx-auto mb-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-trending-up"
+              >
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                <polyline points="16 7 22 7 22 13" />
+              </svg>
+              <h4 class="mb-2">Excelencia</h4>
+              <p>
+                Aportamos un alto valor a tu empresa con el fin de conseguir los
+                mejores resultados. En Mindden, creemos que la excelencia se
+                refleja a través de nuestros profesionales.
+              </p>
+            </div>
+            <div class="card text-center items-center">
+              <svg
+                class="h-12 w-12 mx-auto mb-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <h4 class="mb-2">Cercanía</h4>
+              <p>
+                Somos mucho más que tecnología. Y la cercanía es una práctica
+                diaria que fortalece nuestro compromiso con nuestra gente.
+              </p>
+            </div>
+            <div class="card text-center items-center">
+              <svg
+                class="h-12 w-12 mx-auto mb-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart-handshake"
+              >
+                <path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                />
+                <path
+                  d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.82 2.94 0l.06-.06L12 11l2.96-2.96a2.17 2.17 0 0 0 0-3.08v0c-.82-.82-2.13-.82-2.94 0l-.06.06L12 5Z"
+                />
+              </svg>
+              <h4 class="mb-2">Respeto</h4>
+              <p>
+                Creemos en la importancia de ser una empresa libre de
+                prejuicios, reconociendo y valorando la diversidad de
+                perspectivas y habilidades que cada compañero/a aporta a nuestro
+                equipo.
+              </p>
+            </div>
+            <div class="card text-center items-center">
+              <svg
+                class="h-12 w-12 mx-auto mb-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-lightbulb"
+              >
+                <path
+                  d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"
+                />
+                <path d="M9 18h6" />
+                <path d="M10 22h4" />
+              </svg>
+              <h4 class="mb-2">Innovación</h4>
+              <p>
+                Somos proactivos en la creación de soluciones. En lugar de
+                seguir los métodos convencionales nos atrevemos a pensar fuera
+                de lo establecido.
+              </p>
+            </div>
+          </div>
+
+          <h4 class="text-light mt-6 mb-2 text-lg">¿Qué hacemos?</h4>
+          <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 mt-8">
+            <div class="numbered-list-item">
+              <span class="number-circle">1</span>
+              <p>
+                Consultoría tecnológica (estrategia, gobierno de datos,
+                arquitectura).
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">2</span>
+              <p>
+                Desarrollo a medida (apps, software empresarial, integraciones).
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">3</span>
+              <p>
+                Outsourcing y talento IT (equipos dedicados, refuerzo de
+                capacidades).
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">4</span>
+              <p>
+                Proyectos llave en mano (end-to-end, desde diseño hasta
+                soporte).
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">5</span>
+              <p>
+                Innovación y datos (IA, machine learning, big data,
+                ciberseguridad).
+              </p>
+            </div>
+          </div>
+
+          <h4 class="text-center mt-20">Sectores en los que operamos</h4>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shirt"
+              >
+                <path
+                  d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"
+                />
+              </svg>
+              <span class="sector-name">Moda y Retail</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shopping-cart"
+              >
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"
+                />
+              </svg>
+              <span class="sector-name">Alimentación</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-factory"
+              >
+                <path
+                  d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
+                />
+                <path d="M17 18h1" />
+                <path d="M12 18h1" />
+                <path d="M7 18h1" />
+              </svg>
+              <span class="sector-name">Industria</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-flame"
+              >
+                <path
+                  d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
+                />
+              </svg>
+              <span class="sector-name">Energía, Utilities y Telco</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-truck"
+              >
+                <path
+                  d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"
+                />
+                <path d="M15 18H9" />
+                <path
+                  d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"
+                />
+                <circle cx="17" cy="18" r="2" />
+                <circle cx="7" cy="18" r="2" />
+              </svg>
+              <span class="sector-name">Transporte y Mensajería</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-megaphone"
+              >
+                <path d="m3 11 18-5v12L3 14v-3z" />
+                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+              </svg>
+              <span class="sector-name">Comunicación y Medios</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-landmark"
+              >
+                <line x1="12" x2="12" y1="22" y2="18" />
+                <path d="M2 22h20" />
+                <path d="M4 18h16" />
+                <path d="M3 18v-6l2-2 2 2 3-3 2 2 2-2 3 3 2-2 2 2v6" />
+                <path d="M5 8v-2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2" />
+                <path d="M12 10V4h0" />
+                <path d="m18 10-1-1" />
+                <path d="m6 10 1-1" />
+              </svg>
+              <span class="sector-name">Banca</span>
+            </div>
+            <div class="sector-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-stethoscope"
+              >
+                <path d="M4.8 2.3A.3.3 0 1 0 5 2a.3.3 0 0 0-.2.3Z" />
+                <path d="M6.4 4c-.2-.3-.5-.6-.9-.8" />
+                <path d="m12.5 6.5 3 3" />
+                <path d="m12 6 4 4" />
+                <path
+                  d="M17.8 2.8c-2.3 2.2-2.3 5.9 0 8.2 .9.9 2 1.3 3.2 1.3 1.3 0 2.4-.5 3.2-1.3 2.3-2.3 2.3-6 0-8.2-2.2-2.2-5.9-2.2-8.2 0Z"
+                />
+                <path d="M16.2 12.2a.3.3 0 1 0 .5.2.3.3 0 0 0-.5-.2Z" />
+                <path d="M8.6 4.6c.3-.2.6-.5.8-.8" />
+                <path
+                  d="M14.6 16.5c0-1.2.8-2.2 1.8-2.7l.2-.1c-1.2-1.7-3-2.8-5-3.2-2.3-.4-4.6.4-6.3 2.2s-2.5 4-2.2 6.3.4 4.6 2.2 6.3 4 2.5 6.3 2.2c1.8-.3 3.5-1.1 4.8-2.4c-.1 0-.2-.1-.4-.1-1.2 0-2.2-.8-2.7-1.8Z"
+                />
+              </svg>
+              <span class="sector-name">Salud</span>
+            </div>
+          </div>
+
+          <h4 class="text-center mt-20">Alianzas estratégicas</h4>
+          <div
+            class="flex justify-center items-center gap-8 md:gap-16 flex-wrap mt-8"
+          >
+            <img
+              src="img\logo-xylem.png"
+              alt="Aguas de Murcia Logo"
+              class="ally-logo h-10"
+            />
+            <img
+              src="img\logo-idrica.png"
+              alt="Idrica Logo"
+              class="ally-logo h-12"
+            />
+            <img
+              src="img\logo-suez.png"
+              alt="Suez Logo"
+              class="ally-logo h-10"
+            />
+            <img
+              src="img\logo-veolia.png"
+              alt="Veolia Logo"
+              class="ally-logo h-12"
+            />
+          </div>
+
+          <h4 class="mt-20">Cifras de impacto</h4>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8"
+            id="stats-grid"
+          >
+            <div class="stat-card">
+              <div class="number" data-target="200">+0</div>
+              <div class="label">Profesionales</div>
+            </div>
+            <div class="stat-card">
+              <div class="number" data-target="100">+0</div>
+              <div class="label">Clientes activos</div>
+            </div>
+            <div class="stat-card">
+              <div class="number" data-target="300">+0</div>
+              <div class="label">Proyectos ejecutados</div>
+            </div>
+            <div class="stat-card">
+              <div class="number" data-target="95">+0</div>
+              <div class="label">de clientes recomiendan Mindden</div>
+            </div>
+          </div>
+          <div class="text-center mt-12">
+            <p>
+              En Mindden no solo desarrollamos tecnología, construimos futuro
+              junto a nuestros clientes.
+            </p>
+            <a href="#" class="cta-button mt-4"
+              >¿Quieres digitalizar tu negocio?</a
+            >
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper">
+        <section
+          id="intro"
+          aria-labelledby="intro-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="intro-title">Lakehouse ACUAMED: Gobernanza y Valor</h2>
+          <p>
+            “El Lakehouse no es solo una arquitectura tecnológica, es la
+            garantía de que ACUAMED puede gestionar sus los datos de sus plantas
+            con independencia, transparencia y criterios de máximo valor:
+            ahorros energéticos verificables, inversiones priorizadas con
+            trazabilidad y pleno cumplimiento normativo y sanitario.”
+          </p>
+
+          <h4 class="mt-12">Beneficios estratégicos</h4>
+          <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 mt-8">
+            <div class="checkmark-list-item">
+              <i data-lucide="check-circle-2"></i>
+              <span
+                >Visión única y objetiva de plantas (datos integrados en un solo
+                sistema).</span
+              >
+            </div>
+            <div class="checkmark-list-item">
+              <i data-lucide="check-circle-2"></i>
+              <span
+                >Priorización inteligente de inversiones (CAPEX) basada en
+                coste, beneficio y riesgo.</span
+              >
+            </div>
+            <div class="checkmark-list-item">
+              <i data-lucide="check-circle-2"></i>
+              <span
+                >Ahorro energético comprobado (kWh/m³) con trazabilidad de
+                medidas de eficiencia.</span
+              >
+            </div>
+            <div class="checkmark-list-item">
+              <i data-lucide="check-circle-2"></i>
+              <span
+                >Mayor control sanitario y de calidad del agua en tiempo
+                real.</span
+              >
+            </div>
+            <div class="checkmark-list-item">
+              <i data-lucide="check-circle-2"></i>
+              <span
+                >Reducción de fallos críticos en bombas y membranas mediante
+                modelos predictivos.</span
+              >
+            </div>
+          </div>
+
+          <h4 class="mt-16">Garantías normativas</h4>
+          <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 mt-8">
+            <div class="numbered-list-item">
+              <span class="number-circle">1</span>
+              <p>
+                ENS (Nivel Medio) → seguridad en sistemas públicos críticos.
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">4</span>
+              <p>RGPD → privacidad y protección de datos personales.</p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">2</span>
+              <p>
+                ISO 27001 → gestión certificada de la seguridad de la
+                información.
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">5</span>
+              <p>
+                RD 1085/2024 → eficiencia energética en infraestructuras
+                públicas.
+              </p>
+            </div>
+            <div class="numbered-list-item">
+              <span class="number-circle">3</span>
+              <p>
+                ISO 55001 → gestión de activos: trazabilidad, priorización de
+                CAPEX y maximización de valor de infraestructuras.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper" id="sobrewrapper">
+        <section
+          id="arquitectura"
+          aria-labelledby="arquitectura-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="arquitectura-title">Arquitectura del Lago de Datos</h2>
+
+          <div class="tabs flex flex-wrap border-b border-border-color mb-8">
+            <button
+              class="tab-btn active"
+              onclick="openTab(event, 'conceptual')"
+            >
+              Conceptual
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'general')">
+              General
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'seguridad')">
+              Seguridad y Compliance
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'capas')">
+              Por Capas
+            </button>
+          </div>
+
+          <div id="conceptual" class="tab-content active">
+            <h4 class="flex items-center">
+              <i data-lucide="layout-grid" class="mr-3 h-6 w-6"></i>Arquitectura
+              Conceptual
+            </h4>
+            <br />
+            <div
+              class="figure border border-border-color rounded-lg p-4 bg-card shadow-sm"
+            >
+              <div class="flex justify-end mb-2">
+                <button
+                  class="text-muted hover:text-accent-blue transition-colors flex items-center text-sm font-medium"
+                  onclick="openModal('img/LakeHouse ACUAMED-Lake House Conceptual.jpg')"
+                >
+                  <i data-lucide="maximize" class="h-4 w-4 mr-1"></i> Maximizar
+                </button>
+              </div>
+              <img
+                src="img/LakeHouse ACUAMED-Lake House Conceptual.jpg"
+                alt="Diagrama de la arquitectura conceptual del Lakehouse"
+                class="w-full h-auto rounded-md"
+              />
+              <figcaption class="text-sm text-muted mt-3 text-center">
+                Diagrama de la arquitectura conceptual del Lakehouse.
+              </figcaption>
+            </div>
+            <br />
+            <h4>Discurso asociado:</h4>
+            <br />
+            <blockquote>
+              <em
+                >“Esta lámina traduce la tecnología en valor concreto para
+                ACUAMED. Toda la información de diferentes fuente OT o IT se
+                recoge en tiempo real. Esos datos viajan seguros hasta el
+                Lakehouse, donde se clasifican en tres espacios: Bronce (datos
+                en bruto), Plata y Oro (datos limpios y preparados para
+                análisis) y LAB (un entorno de pruebas para algoritmos y
+                modelos).<br /><br />¿Qué hacemos con esto? En la capa superior
+                desplegamos casos de uso tangibles: con machine learning podemos
+                anticipar fallos en bombas y membranas; con IA avanzada,
+                monitorizamos el rendimiento energético; con dashboards,
+                cualquier responsable puede ver indicadores clave. Dicho de
+                forma simple: este sistema permitirá a ACUAMED pasar de depender
+                de informes de contratistas a tener una visión propia, objetiva
+                y continua de toda su red. El valor estratégico es enorme: mayor
+                disponibilidad, menos fallos, ahorro energético y, sobre todo,
+                mayor confianza en los datos.”</em
+              >
+            </blockquote>
+          </div>
+
+          <div id="general" class="tab-content">
+            <h4 class="flex items-center">
+              <i data-lucide="settings-2" class="mr-3 h-6 w-6"></i>Arquitectura
+              General
+            </h4>
+            <br />
+            <div
+              class="figure border border-border-color rounded-lg p-4 bg-card shadow-sm"
+            >
+              <div class="flex justify-end mb-2">
+                <button
+                  class="text-muted hover:text-accent-blue transition-colors flex items-center text-sm font-medium"
+                  onclick="openModal('img\\LakeHouse ACUAMED-General.jpg')"
+                >
+                  <i data-lucide="maximize" class="h-4 w-4 mr-1"></i> Maximizar
+                </button>
+              </div>
+              <img
+                src="img\LakeHouse ACUAMED-General.jpg"
+                alt="Diagrama de la arquitectura general del sistema"
+                class="w-full h-auto rounded-md"
+              />
+              <figcaption class="text-sm text-muted mt-3 text-center">
+                Diagrama de la arquitectura general del sistema.
+              </figcaption>
+            </div>
+            <br />
+            <h4>Discurso asociado:</h4>
+            <blockquote>
+              <em
+                >“Aquí simplificamos la visión global. En la parte izquierda
+                están las plantas desaladoras y los sistemas SCADA, que recogen
+                datos en tiempo real sobre caudales, bombas, membranas o
+                consumos eléctricos. Toda esa información viaja hacia el Lago de
+                Datos, donde aplicamos reglas de gobernanza y clasificación
+                (Bronce, Plata, Oro, LAB). Desde ahí podemos lanzar tres grandes
+                bloques de valor: Capa de Aplicaciones, con portales web y apps
+                internas para la supervisión. Capa de Machine Learning, donde
+                algoritmos anticipan fallos y calculan vida útil de activos.
+                Capa de Inteligencia Artificial, que nos permite optimizar
+                rendimientos energéticos o lanzar alertas de calidad del agua.
+                Dicho de forma sencilla: pasamos de tener datos dispersos a
+                tener un sistema que nos dice dónde están los problemas, qué
+                activos son menos eficientes y dónde invertir mejor cada euro en
+                mantenimiento y renovación.”</em
+              >
+            </blockquote>
+          </div>
+
+          <div id="seguridad" class="tab-content">
+            <h4 class="flex items-center">
+              <i data-lucide="lock" class="mr-3 h-6 w-6"></i>Arquitectura de
+              Seguridad y Compliance
+            </h4>
+            <br />
+            <div
+              class="figure border border-border-color rounded-lg p-4 bg-card shadow-sm"
+            >
+              <div class="flex justify-end mb-2">
+                <button
+                  class="text-muted hover:text-accent-blue transition-colors flex items-center text-sm font-medium"
+                  onclick="openModal('img\\LakeHouse ACUAMED-Arquitectura Seguridad.jpg')"
+                >
+                  <i data-lucide="maximize" class="h-4 w-4 mr-1"></i> Maximizar
+                </button>
+              </div>
+              <img
+                src="img\LakeHouse ACUAMED-Arquitectura Seguridad.jpg"
+                alt="Esquema de la arquitectura de seguridad y cumplimiento normativo"
+                class="w-full h-auto rounded-md"
+              />
+              <figcaption class="text-sm text-muted mt-3 text-center">
+                Esquema de la arquitectura de seguridad y cumplimiento
+                normativo.
+              </figcaption>
+            </div>
+            <h4>Discurso asociado:</h4>
+            <br />
+            <blockquote>
+              <em
+                >“Aquí les muestro cómo garantizamos que todo esto se haga de
+                forma segura y conforme a la normativa. Empezamos en el
+                perímetro: todas las conexiones desde plantas, sistemas IT y
+                datos de terceros entran por canales cifrados (TLS, VPN). Ahí
+                tenemos un Firewall y un WAF que nos protegen frente a ataques
+                externos. Los accesos de usuarios, contratistas y aplicaciones
+                se gestionan mediante OAuth e identidades digitales, lo que
+                asegura que cada acción quede registrada y controlada. Dividimos
+                la nube en subredes: en la principal están el Lago de Datos y
+                las aplicaciones corporativas, en otra aislada trabajamos con
+                modelos de IA. Esto minimiza riesgos y permite cumplir con los
+                requisitos del ENS (nivel medio), que es obligatorio para
+                entidades públicas. Además, vinculamos cada bloque a la
+                normativa: ENS e ISO 27001 para seguridad y trazabilidad, RGPD
+                para proteger cualquier dato personal que pueda manejarse,
+                Reglamento europeo 2020/741 para garantizar parámetros de
+                calidad de agua, y el RD 1085/2024 para el control de eficiencia
+                energética. Con esta arquitectura, no solo protegemos los datos:
+                garantizamos que ACUAMED podrá superar cualquier auditoría de
+                seguridad, energética o sanitaria con total transparencia.”</em
+              >
+            </blockquote>
+          </div>
+
+          <div id="capas" class="tab-content">
+            <h4 class="flex items-center">
+              <i data-lucide="layers-3" class="mr-3 h-6 w-6"></i>Arquitectura
+              por Capas
+            </h4>
+            <br />
+            <div
+              class="figure border border-border-color rounded-lg p-4 bg-card shadow-sm"
+            >
+              <div class="flex justify-end mb-2">
+                <button
+                  class="text-muted hover:text-accent-blue transition-colors flex items-center text-sm font-medium"
+                  onclick="openModal('img\\LakeHouse ACUAMED-Arquitectura Capas.jpg')"
+                >
+                  <i data-lucide="maximize" class="h-4 w-4 mr-1"></i> Maximizar
+                </button>
+              </div>
+              <img
+                src="img\LakeHouse ACUAMED-Arquitectura Capas.jpg"
+                alt="Diagrama detallado de la arquitectura por capas"
+                class="w-full h-auto rounded-md"
+              />
+              <figcaption class="text-sm text-muted mt-3 text-center">
+                Diagrama detallado de la arquitectura por capas.
+              </figcaption>
+            </div>
+            <br />
+            <h4>Discurso asociado:</h4>
+            <blockquote>
+              <em
+                >“En esta primera lámina vemos la arquitectura por capas del
+                Lago de Datos. La lógica es sencilla: cada fuente de información
+                que hoy está dispersa —ERP, GMAO, SCADAs de desaladoras,
+                consumos energéticos, datos de calidad del agua— se conecta y
+                fluye hacia este sistema central. Aquí organizamos los datos en
+                diferentes niveles: La capa RAW o Bronce, donde guardamos todo
+                tal cual llega. La capa DWH o Plata/Oro, donde se limpian,
+                transforman y se convierten en información fiable. Y la capa
+                LAB, un espacio de pruebas donde podemos aplicar modelos de
+                predicción y algoritmos de inteligencia artificial. Con esto
+                conseguimos algo fundamental: que cada decisión de ACUAMED se
+                base en datos objetivos, trazables y auditables, no en informes
+                parciales de terceros. Esta estructura es la base de un sistema
+                robusto y escalable para gestionar sus desaladoras.”</em
+              >
+            </blockquote>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper">
+        <section
+          id="casos"
+          aria-labelledby="casos-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="casos-title">Casos de Uso de Valor</h2>
+          <p>
+            La ISO 55001 busca que cada decisión de operación, mantenimiento e
+            inversión esté trazada, justificada y alineada con los objetivos
+            estratégicos de la organización, teniendo en cuenta riesgos, costes,
+            rendimiento y sostenibilidad.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-x-8 gap-y-4 mt-8">
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">1</span
+                ><strong class="text-light"
+                  >Predicción de fallos en bombas y membranas</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> garantizar la
+                  disponibilidad y fiabilidad de activos críticos (alineado con
+                  cláusulas 4.2, 6.1 y 8 de la norma).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Modelos
+                  predictivos que identifican anomalías en bombas y membranas
+                  antes de que se produzca la avería. Reducción de MTBF (Mean
+                  Time Between Failures) y del MTTR (Mean Time To Repair) al
+                  anticipar recambios y recursos.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Aumenta la
+                  disponibilidad de los activos (KPI clave). Minimiza riesgos
+                  operativos y financieros al reducir paradas no planificadas.
+                  Permite trazabilidad: cada mantenimiento se justifica con
+                  datos históricos.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">7</span
+                ><strong class="text-light">Pretratamiento</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> garantizar la calidad de
+                  agua de entrada a membranas y optimizar costes químicos
+                  (cláusulas 6.1 y 9.1).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Identificación
+                  de fallos en coagulación y filtración por falta de reactivos,
+                  dosificación incorrecta o roturas de filtros. Modelos
+                  predictivos de ensuciamiento basados en turbidez y ΔP.
+                  Comparación de eficiencia entre diferentes trenes de
+                  pretratamiento.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Justificación de
+                  inversiones en sistemas de dosificación automática y sensores
+                  de calidad. Transparencia en costes de operación y
+                  optimización de químicos. Evidencias objetivas para auditores
+                  y financiadores.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">2</span
+                ><strong class="text-light"
+                  >Eficiencia energética (kWh/m³)</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> optimizar la eficiencia
+                  en el ciclo de vida de los activos y maximizar valor
+                  (cláusulas 6.2, 8.1 y 9.1).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Monitorización
+                  comparativa entre desaladoras. Identificación de desviaciones
+                  energéticas (ej.: variadores, fouling en membranas, bombas
+                  sobredimensionadas).
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Optimiza el
+                  costo de ciclo de vida (LCC, Life Cycle Costing). Relación
+                  directa con OPEX, facilitando reporting hacia la dirección.
+                  Permite decisiones basadas en evidencia para priorizar
+                  inversiones en eficiencia (ej.: sustitución de bombas o
+                  membranas).
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">8</span
+                ><strong class="text-light">Ósmosis inversa</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> extender la vida útil de
+                  membranas y equipos de alta presión, reduciendo el coste de
+                  ciclo de vida (cláusulas 7.5 y 8.3).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Seguimiento de
+                  degradación por ΔP, rechazo salino y horas de operación.
+                  Alarmas por CIP fuera de plan y análisis de efectividad de
+                  limpiezas. Monitoreo de fallos mecánicos en bombas HP y
+                  variadores de frecuencia.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Priorización de
+                  reposición de membranas frente a extensión de vida útil.
+                  Reducción del MTTR y aumento de MTBF en bombas críticas.
+                  Criterios objetivos para CAPEX de renovación tecnológica.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">3</span
+                ><strong class="text-light"
+                  >Mapa de riesgo de activos (CAPEX)</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> priorizar decisiones de
+                  inversión con criterios de riesgo, impacto y coste/beneficio
+                  (cláusulas 6.1, 7.5 y 8.3).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Clasificación de
+                  activos críticos según probabilidad de fallo × impacto
+                  (financiero, ambiental, social). Escenarios de inversión que
+                  comparan coste de reposición vs coste de indisponibilidad.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Transparencia en
+                  la planificación de CAPEX. Justificación objetiva ante
+                  auditores y financiadores públicos. Alineación con el
+                  principio ISO 55001 de maximizar valor de activos en
+                  equilibrio con riesgos y costes.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">9</span
+                ><strong class="text-light">Postratamiento e impulsión</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> asegurar la calidad final
+                  y continuidad del suministro (cláusulas 8.2 y 9.1).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Monitorización
+                  de disponibilidad de equipos de remineralización y cloración.
+                  Control de cloro residual y LSI en agua de salida. Evaluación
+                  de eficiencia de bombas de impulsión y análisis de paradas.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Justificación de
+                  inversiones en redundancia de sistemas de cloración.
+                  Transparencia en la seguridad del suministro ante auditores de
+                  salud pública. Optimización de costes energéticos en
+                  impulsión.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">4</span
+                ><strong class="text-light"
+                  >Calidad del agua en tiempo real</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> garantizar el
+                  cumplimiento de requisitos legales y regulatorios (cláusulas
+                  4.2, 6.1 y 9.1) y proteger el valor de los activos mediante la
+                  gestión de riesgos.
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Monitorización
+                  online de turbidez, conductividad, cloro residual, etc.
+                  Alarmas preventivas frente a incumplimientos del Reglamento
+                  (UE) 2020/741 y RD 1085/2024.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Refuerza la
+                  confiabilidad del servicio y la reputación de la organización.
+                  Reduce riesgos legais y financieros asociados a
+                  incumplimientos. Incorpora la gestión de riesgos sanitarios y
+                  ambientales en la toma de decisiones sobre los activos.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">10</span
+                ><strong class="text-light">Resiliencia OT (SCADA/PLC)</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> asegurar la integridad de
+                  la información de operación como activo crítico (cláusulas 7.5
+                  y 9.1).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Monitorización
+                  de latencia, pérdida de tags y errores de comunicación en
+                  SCADA/PLC. Alarmas en modo degradado y pérdida de control
+                  seguro. Evidencias de integridad para auditorías ENS/ISO
+                  27001.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Priorización de
+                  CAPEX en redundancia OT y ciberseguridad. Transparencia en
+                  disponibilidad de sistemas de control. Justificación objetiva
+                  ante ENS de resiliencia tecnológica.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">5</span
+                ><strong class="text-light"
+                  >Continuidad eléctrica y respaldo (red + grupos
+                  electrógenos/ATS)</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> asegurar la
+                  disponibilidad de la infraestructura crítica minimizando
+                  energía no servida y riesgo de interrupción (cláusulas 6.1 y
+                  8.2).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Predicción de
+                  sobrecargas y fallos de línea mediante series históricas y
+                  correlación con consumos. Supervisión de autonomía de
+                  combustible y estado de autoarranques de grupos
+                  electrógenos/ATS. Cálculo del indicador energía no servida
+                  (kWh) por indisponibilidad eléctrica.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Priorización de
+                  inversiones en grupos de respaldo y sistemas ATS.
+                  Transparencia en continuidad de suministro para auditores
+                  ENS/ISO 27001. Justificación objetiva de CAPEX en refuerzos
+                  eléctricos.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">11</span
+                ><strong class="text-light">bis Logística de químicos</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> evitar paradas por rotura
+                  de suministro de insumos críticos (cláusulas 6.1 y 8.3).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Control de stock
+                  mínimo y consumos diarios de químicos. Análisis de lead time y
+                  riesgo de rotura de suministro. Alertas tempranas para compras
+                  urgentes.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Priorización de
+                  contratos marco y sistemas de almacenamiento. Transparencia en
+                  costes logísticos asociados a químicos. Reducción de paradas
+                  imprevistas por falta de reactivos.
+                </p>
+              </div>
+            </details>
+            <details class="use-case-item">
+              <summary>
+                <span class="number-circle">6</span
+                ><strong class="text-light">Captación marina</strong
+                ><i data-lucide="plus" class="plus-icon"></i>
+              </summary>
+              <div class="use-case-content">
+                <p>
+                  <strong>Objetivo ISO 55001:</strong> proteger los activos de
+                  captación y reducir paradas no programadas (cláusulas 6.1 y
+                  8.3).
+                </p>
+                <p>
+                  <strong>Qué aporta el Lago de Datos:</strong> Detección
+                  temprana de fouling (algas, medusas, aceites, sedimentos) a
+                  partir de turbidez, SDI y ΔP. Correlación con oleaje, mareas y
+                  tormentas para anticipar cierres preventivos. Análisis de
+                  patrones estacionales para programar mantenimientos.
+                </p>
+                <p>
+                  <strong>Valor en términos ISO 55001:</strong> Aumento de
+                  disponibilidad de bombas y tomas marinas. Reducción de OPEX
+                  por limpiezas de emergencia. Priorización de CAPEX en sistemas
+                  de cribado o prefiltración avanzada.
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <div
+            class="card mt-10"
+            style="background-color: #1a294a; border-color: var(--border-color)"
+          >
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
+              <div class="checkmark-list-item">
+                <i data-lucide="check"></i
+                ><span
+                  >Maximizar valor: menos paradas, más eficiencia, mejor
+                  calidad.</span
+                >
+              </div>
+              <div class="checkmark-list-item">
+                <i data-lucide="check"></i
+                ><span
+                  >Optimizar costes de ciclo de vida: decisiones CAPEX/OPEX
+                  trazables.</span
+                >
+              </div>
+              <div class="checkmark-list-item">
+                <i data-lucide="check"></i
+                ><span
+                  >Minimizar riesgos: fallos críticos y sanciones
+                  regulatorias.</span
+                >
+              </div>
+              <div class="checkmark-list-item">
+                <i data-lucide="check"></i
+                ><span
+                  >Cumplir requisitos legales y normativos: ISO 55001 + ENS +
+                  ISO 27001 + Reglamento (UE) 2020/741.</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper" id="sobrewrapper">
+        <section
+          id="kpis"
+          aria-labelledby="kpis-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="kpis-title">KPIs y dashboards de valor</h2>
+          <p>
+            Cada KPI debe de ser diseñado para ser auditable, trazable y
+            comparable entre plantas, asegurando el cumplimiento normativo y la
+            mejora continua en línea con ISO 55001 y las directrices de Acuamed.
+          </p>
+          <div class="table-container mt-8">
+            <table
+              role="table"
+              aria-label="KPIs y evidencias auditables"
+              class="table-hover"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">KPI</th>
+                  <th scope="col">Fórmula / Fuente</th>
+                  <th scope="col">Valor para ISO 55001</th>
+                  <th scope="col">Evidencia auditable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tasa de fallos en bombas y membranas (#/año)</td>
+                  <td>Nº fallos detectados / año. Fuente: GMAO + SCADA.</td>
+                  <td>
+                    Mide la fiabilidad de activos críticos (Cláusulas 4.2 y
+                    6.1).
+                  </td>
+                  <td>
+                    Reportes de GMAO, logs de SCADA, órdenes de trabajo
+                    cerradas.
+                  </td>
+                </tr>
+                <tr>
+                  <td>MTBF (Mean Time Between Failures)</td>
+                  <td>
+                    Tiempo total de operación / Nº de fallos. Fuente: SCADA +
+                    GMAO.
+                  </td>
+                  <td>
+                    Indicador de confiabilidad y disponibilidad de activos
+                    (Cláusula 8).
+                  </td>
+                  <td>
+                    Históricos de operación, informes de fallos, reportes de
+                    GMAO.
+                  </td>
+                </tr>
+                <tr>
+                  <td>MTTR (Mean Time To Repair)</td>
+                  <td>
+                    Tiempo total de reparación / Nº reparaciones. Fuente: GMAO.
+                  </td>
+                  <td>Indicador de mantenibilidad (Cláusula 9.1).</td>
+                  <td>
+                    Órdenes de trabajo, análisis de incidencias, reportes de
+                    mantenimiento.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Consumo energético específico (kWh/m³)</td>
+                  <td>
+                    Energía total consumida / m³ producidos. Fuente: ERP Energía
+                    + SCADA.
+                  </td>
+                  <td>
+                    Optimiza el costo de ciclo de vida (LCC) y OPEX (Cláusulas
+                    6.2 y 9.1).
+                  </td>
+                  <td>
+                    Facturas energéticas, dashboards energéticos, auditorías de
+                    eficiencia.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Desviación energética entre plantas (%)</td>
+                  <td>
+                    (Consumo específico planta – Consumo medio red) / Consumo
+                    medio × 100. Fuente: Data Lake.
+                  </td>
+                  <td>
+                    Permite benchmarking y priorización de CAPEX (Cláusulas 6.2
+                    y 8.1).
+                  </td>
+                  <td>
+                    Reportes comparativos de plantas, dashboards de eficiencia.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Índice de criticidad de activos (ICR)</td>
+                  <td>
+                    Probabilidad de fallo × Impacto (financiero + ambiental +
+                    social). Fuente: Data Lake + GMAO.
+                  </td>
+                  <td>
+                    Prioriza inversiones con criterios de riesgo/beneficio
+                    (Cláusulas 6.1 y 8.3).
+                  </td>
+                  <td>
+                    Matriz de riesgos, informes de criticidad, auditorías de
+                    CAPEX.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Coste de indisponibilidad (€)</td>
+                  <td>
+                    (Tiempo de parada × producción perdida × coste unitario).
+                    Fuente: SCADA + ERP.
+                  </td>
+                  <td>
+                    Transparencia en planificación de CAPEX (Cláusula 7.5).
+                  </td>
+                  <td>
+                    Informes de producción, reportes financieros, actas de
+                    auditoría.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cumplimiento sanitario (%)</td>
+                  <td>
+                    (Muestras conformes / Total muestras) × 100. Fuente:
+                    sensores online + laboratorio.
+                  </td>
+                  <td>
+                    Garantiza cumplimiento de requisitos legales (Cláusulas 4.2
+                    y 6.1).
+                  </td>
+                  <td>
+                    Dashboards de calidad, registros de sensores, auditorías
+                    Reglamento (UE) 2020/741 y RD 1085/2024.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alertas sanitarias (#/año)</td>
+                  <td>
+                    Nº de alarmas fuera de rango (cloro, turbidez,
+                    conductividad). Fuente: SCADA.
+                  </td>
+                  <td>Mide riesgos legais y reputacionales (Cláusula 9.1).</td>
+                  <td>Históricos de SCADA, reportes de laboratorio.</td>
+                </tr>
+                <tr>
+                  <td>Energía no servida (kWh)</td>
+                  <td>
+                    Σ kWh no suministrados en paradas eléctricas. Fuente: SCADA
+                    + contadores.
+                  </td>
+                  <td>Mide resiliencia eléctrica (Cláusulas 6.1 y 8.2).</td>
+                  <td>
+                    Histórico de SCADA, registros de grupos electrógenos, partes
+                    de mantenimiento.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fiabilidad de autoarranque (%)</td>
+                  <td>
+                    (Nº autoarranques correctos / Intentos) × 100. Fuente: SCADA
+                    grupos.
+                  </td>
+                  <td>
+                    Evalúa confiabilidad de sistemas de respaldo (Cláusula 8.3).
+                  </td>
+                  <td>Logs SCADA, actas de prueba de grupos electrógenos.</td>
+                </tr>
+                <tr>
+                  <td>Disponibilidad de captación (%)</td>
+                  <td>
+                    (Horas de operación / Horas totales) × 100. Fuente: SCADA +
+                    GMAO.
+                  </td>
+                  <td>
+                    Disponibilidad de activos de toma marina (Cláusulas 6.1 y
+                    8.2).
+                  </td>
+                  <td>
+                    Reportes SCADA, órdenes cerradas, análisis de incidencias.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Eventos de fouling (#/año)</td>
+                  <td>
+                    Nº alarmas turbidez/SDI/ΔP. Fuente: SCADA + Data Lake.
+                  </td>
+                  <td>
+                    Identifica riesgos de indisponibilidad (Cláusula 6.1).
+                  </td>
+                  <td>Históricos de sensores, reportes ambientales.</td>
+                </tr>
+                <tr>
+                  <td>ΔP en filtros multimedia (bar)</td>
+                  <td>Pentrada – Psalida. Fuente: SCADA filtros.</td>
+                  <td>Mide ensuciamiento → mantenibilidad (Cláusula 9.1).</td>
+                  <td>
+                    Logs SCADA, registros de backwash, informes de
+                    mantenimiento.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alarmas por falta de reactivos (#/año)</td>
+                  <td>Nº eventos stock = 0. Fuente: ERP + SCADA.</td>
+                  <td>
+                    Riesgo de indisponibilidad logística (Cláusulas 6.1 y 8.3).
+                  </td>
+                  <td>Facturas de reactivos, registros ERP, alarmas SCADA.</td>
+                </tr>
+                <tr>
+                  <td>Rechazo salino medio (%)</td>
+                  <td>
+                    (Salinidad entrada – salida) / entrada × 100. Fuente: SCADA.
+                  </td>
+                  <td>
+                    Indicador de rendimiento y ciclo de vida de membranas
+                    (Cláusula 8.3).
+                  </td>
+                  <td>Informes de laboratorio, registros SCADA.</td>
+                </tr>
+                <tr>
+                  <td>Horas desde último CIP (h)</td>
+                  <td>
+                    Tiempo transcurrido desde última limpieza. Fuente: GMAO.
+                  </td>
+                  <td>Controla la vida útil de membranas (Cláusula 7.5).</td>
+                  <td>Reportes de mantenimiento, históricos de CIP.</td>
+                </tr>
+                <tr>
+                  <td>Disponibilidad bombas de impulsión (%)</td>
+                  <td>
+                    (Horas disponibles / Horas totales) × 100. Fuente: SCADA +
+                    GMAO.
+                  </td>
+                  <td>Fiabilidad de impulsión (Cláusulas 6.1 y 8.2).</td>
+                  <td>Órdenes cerradas, reportes SCADA.</td>
+                </tr>
+                <tr>
+                  <td>Cumplimiento cloro residual (%)</td>
+                  <td>
+                    (Muestras conformes / total) × 100. Fuente: SCADA +
+                    laboratorio.
+                  </td>
+                  <td>Asegura calidad final de suministro (Cláusula 8.2).</td>
+                  <td>
+                    Informes de laboratorio, registros SCADA, auditorías de
+                    sanidad.
+                  </td>
+                </tr>
+                <tr>
+                  <td>% Tags SCADA disponibles</td>
+                  <td>(Tags válidos / Totales) × 100. Fuente: SCADA.</td>
+                  <td>
+                    Confiabilidad de información de activos críticos (Cláusula
+                    7.5).
+                  </td>
+                  <td>Logs SCADA, auditorías ENS/ISO 27001, reportes OT.</td>
+                </tr>
+                <tr>
+                  <td>Latencia promedio en datos (s)</td>
+                  <td>Σ retrasos / Nº señales. Fuente: SCADA + Data Lake.</td>
+                  <td>Indicador de monitoreo en tiempo real (Cláusula 9.1).</td>
+                  <td>Logs de comunicaciones, reportes de ciberseguridad.</td>
+                </tr>
+                <tr>
+                  <td>Cobertura de stock de reactivos (días)</td>
+                  <td>
+                    Inventario disponible / Consumo diario medio. Fuente: ERP +
+                    Data Lake.
+                  </td>
+                  <td>Evita paradas por falta de insumos (Cláusula 6.1).</td>
+                  <td>Facturas, registros ERP, informes de almacén.</td>
+                </tr>
+                <tr>
+                  <td>Alertas stock mínimo (#/año)</td>
+                  <td>
+                    Nº veces inventario < stock mínimo. Fuente: ERP + SCADA.
+                  </td>
+                  <td>
+                    Justificación de CAPEX en almacenamiento (Cláusula 8.3).
+                  </td>
+                  <td>
+                    Alarmas ERP, reportes de abastecimiento, órdenes de compra
+                    urgentes.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper">
+        <section
+          id="gobernanza"
+          aria-labelledby="gobernanza-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="gobernanza-title">Gobernanza y cumplimiento Normativo</h2>
+          <p>
+            El Lago de Datos de ACUAMED se debe diseñar bajo un marco integral
+            de gobernanza y compliance que asegure la trazabilidad, seguridad y
+            auditoría de cada proceso. La plataforma cumple con las siguientes
+            normativas aplicables.
+          </p>
+          <p>
+            La plataforma debe de ser auditada con el mismo rigor que una
+            auditoría externa de ACUAMED o Tribunal de Cuentas: cada KPI, cada
+            decisión y cada inversión estarán soportados por evidencias
+            trazables y normativamente alineadas.
+          </p>
+          <div class="table-container mt-8">
+            <table
+              role="table"
+              aria-label="Normativa y evidencias en la plataforma"
+              class="table-hover"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">Norma / Reglamento</th>
+                  <th scope="col">Obligación principal</th>
+                  <th scope="col">Evidencia en la plataforma</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ENS (Nivel Medio)</td>
+                  <td>
+                    Seguridad en infraestructuras críticas. Continuidad y
+                    respuesta a incidentes.
+                  </td>
+                  <td>
+                    Logs centralizados (SIEM), informes de continuidad,
+                    auditorías ENS.
+                  </td>
+                </tr>
+                <tr>
+                  <td>ISO 27001</td>
+                  <td>Protección y gestión de la información.</td>
+                  <td>
+                    Políticas de acceso, cifrado TLS/AES, informes SGSI,
+                    auditorías internas.
+                  </td>
+                </tr>
+                <tr>
+                  <td>ISO 55001</td>
+                  <td>
+                    Trazabilidad de decisiones de inversión y mantenimiento.
+                  </td>
+                  <td>
+                    Catálogo de activos, KPIs de ciclo de vida, informes
+                    CAPEX/OPEX.
+                  </td>
+                </tr>
+                <tr>
+                  <td>RGPD</td>
+                  <td>Protección de datos personales.</td>
+                  <td>
+                    Registro de tratamientos, evidencias de anonimización,
+                    consentimientos y logs de acceso.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Directiva (UE) 2020/2184 y RD 3/2023</td>
+                  <td>
+                    Calidad del agua potable (microbiología, química, turbidez,
+                    cloro residual).
+                  </td>
+                  <td>
+                    Dashboards de calidad, registros de laboratorio, alarmas
+                    SCADA.
+                  </td>
+                </tr>
+                <tr>
+                  <td>RD 1085/2024</td>
+                  <td>Eficiencia energética en infraestructuras públicas.</td>
+                  <td>
+                    KPIs de rendimiento energético (kWh/m³), informes de ahorro,
+                    auditorías energéticas.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper" id="sobrewrapper">
+        <section
+          id="escalabilidad"
+          aria-labelledby="escalabilidad-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="escalabilidad-title">Visión de escalabilidad y costes</h2>
+          <p>
+            El Lago de Datos se plantea como una plataforma flexible y portable
+            (cloud, híbrido u on-premise), que aprovecha el cumplimiento ENS ya
+            existente en ACUAMED, con un modelo de costes modular y auditable, y
+            capacidad para crecer desde un piloto inicial hasta abarcar toda la
+            red de infraestructuras de interés general.
+          </p>
+          <br />
+          <blockquote>
+            La decisión final de la arquitectura de sistemas debe de tomarse en
+            función de criterios de coste, riesgo y estrategia de
+            infraestructura definidos por ACUAMED.
+          </blockquote>
+          <br />
+          <h4 class="flex items-center">
+            <i data-lucide="piggy-bank" class="mr-3 h-6 w-6"></i>1.
+            Sostenibilidad económica
+          </h4>
+          <br />
+          <p>
+            El Lago de Datos se debe de diseñar bajo un modelo modular y
+            auditable, que permite un control claro de costes y una
+            escalabilidad progresiva.
+          </p>
+          <div class="table-container mt-8">
+            <table
+              role="table"
+              aria-label="Bloques de coste previstos"
+              class="table-hover"
+            >
+              <!--<caption>Bloques de coste previstos</caption>-->
+              <thead>
+                <tr>
+                  <th scope="col">Bloque</th>
+                  <th scope="col">Alcance</th>
+                  <th scope="col">Observaciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Consultoría inicial</td>
+                  <td>
+                    Diseño de arquitectura, gobierno del dato, definición de
+                    KPIs y alineación con normativa (ISO 55001, ISO 27001, ENS
+                    ya vigente en ACUAMED).
+                  </td>
+                  <td>Coste fijo por horas consultoría.</td>
+                </tr>
+                <tr>
+                  <td>Implantación</td>
+                  <td>
+                    Integración de fuentes (SCADA, ERP, GMAO), configuración de
+                    pipelines ETL y cuadros de mando iniciales.
+                  </td>
+                  <td>Coste en función de nº de sistemas a integrar.</td>
+                </tr>
+                <tr>
+                  <td>Hosting / Infraestructura</td>
+                  <td>
+                    Abierto: puede ser cloud, híbrido u on-premise según
+                    decisión de ACUAMED y MITECO.
+                  </td>
+                  <td>
+                    La arquitectura es portable: se puede desplegar en el CPD
+                    actual (cumplimiento ENS ya garantizado) o en nube soberana
+                    sin rediseño.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Soporte y mantenimiento</td>
+                  <td>Correctivo, preventivo, adaptativo y perfectivo.</td>
+                  <td>
+                    Costo anual en torno al 12–18% del coste de implantación.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Auditorías externas</td>
+                  <td>ISO 27001, ISO 55001, auditoría energética.</td>
+                  <td>
+                    ENS no genera coste adicional porque ya está cubierto por
+                    ACUAMED.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-6">Claves de sostenibilidad</h4>
+          <br />
+          <ul class="list-none space-y-2 pl-0">
+            <li class="flex items-center">
+              <i data-lucide="check" class="inline h-4 w-4 mr-2"></i>El coste
+              unitario decrece a medida que se incorporan más infraestructuras.
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="check" class="inline h-4 w-4 mr-2"></i>El OPEX de
+              soporte queda justificado por los ahorros energéticos y de
+              mantenimiento verificables.
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="check" class="inline h-4 w-4 mr-2"></i>No se
+              generan duplicidades en ENS: se puede aprovechar el cumplimiento
+              ya existente en ACUAMED.
+            </li>
+          </ul>
+          <br />
+
+          <h4 class="flex items-center">
+            <i data-lucide="trending-up" class="mr-3 h-6 w-6"></i>2.
+            Escalabilidad técnica y organizativa
+          </h4>
+          <br />
+          <p>
+            El diseño es modular y portable, lo que permite crecer desde un
+            piloto inicial hacia una red más amplia de infraestructuras de
+            interés general, sin rehacer la arquitectura.
+          </p>
+          <ul class="list-none space-y-2 pl-0 mt-4">
+            <li class="flex items-start">
+              <i
+                data-lucide="check"
+                class="inline h-4 w-4 mr-2 mt-1 flex-shrink-0"
+              ></i
+              ><strong>Fase inicial (piloto reducido)</strong>: Integración de
+              fuentes críticas (ej. SCADA y ERP, Plataforma Energía). Dashboards
+              básicos (disponibilidad, energía, calidad). Primer modelo
+              predictivo de fallos.
+            </li>
+            <li class="flex items-start">
+              <i
+                data-lucide="check"
+                class="inline h-4 w-4 mr-2 mt-1 flex-shrink-0"
+              ></i
+              ><strong>Fase de extensión (infraestructuras adicionales)</strong
+              >: Integración con GMAO para trazabilidad CAPEX/OPEX. Gobierno del
+              dato con catálogo de metadatos. Extensión a otras
+              infraestructuras: EDAR, bombeos, conducciones, depósitos.
+            </li>
+            <li class="flex items-start">
+              <i
+                data-lucide="check"
+                class="inline h-4 w-4 mr-2 mt-1 flex-shrink-0"
+              ></i
+              ><strong>Fase avanzada (red completa)</strong>: Gobierno
+              centralizado con operación distribuida. Modelos predictivos
+              avanzados (optimización energética global, calidad del agua).
+              Gemelos digitales y simulación de escenarios con IA.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="section-wrapper">
+        <section
+          id="cierre"
+          aria-labelledby="cierre-title"
+          class="section-fade-in wrap"
+        >
+          <h2 id="cierre-title">
+            Cierre: propuesta de colaboración o próximos pasos
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card">
+              <h4 class="flex items-center mb-2">
+                <i data-lucide="award" class="mr-3 h-5 w-5"></i>Valor aportado
+              </h4>
+              <p>
+                Visión sobre cómo un Lago de Datos puede mejorar eficiencia,
+                trazabilidad y cumplimiento normativo en infraestructuras
+                críticas. Marco alineado con ENS, ISO 27001, ISO 55001, RD
+                1085/2024 y normativa de agua de consumo.
+              </p>
+            </div>
+            <div class="card">
+              <h4 class="flex items-center mb-2">
+                <i data-lucide="send" class="mr-3 h-5 w-5"></i>Opciones de
+                colaboración (a su consideración)
+              </h4>
+              <ul class="list-none space-y-2 pl-0">
+                <li class="flex items-center">
+                  <i data-lucide="check" class="inline h-4 w-4 mr-2"></i>Taller
+                  exploratorio de casos de uso y KPIs prioritarios.
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="inline h-4 w-4 mr-2"></i
+                  >Comparativa de escenarios de infraestructura (cloud, híbrido,
+                  on-premise).
+                </li>
+                <li class="flex items-center">
+                  <i data-lucide="check" class="inline h-4 w-4 mr-2"></i>Piloto
+                  reducido en una infraestructura representativa.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4 class="flex items-center mb-2">
+                <i data-lucide="user-check" class="mr-3 h-5 w-5"></i>Nuestra
+                disposición
+              </h4>
+              <p>
+                Aportar experiencia y metodologías probadas en el sector del
+                agua. Apoyar en la medida que ACUAMED lo considere útil.
+                Mantener un rol de aliado técnico y estratégico, no comercial.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="site-footer">
+      <div class="wrap mx-auto px-6 py-12 text-center">
+        <h4 class="text-2xl font-bold mb-4 text-light">
+          El Encaje Perfecto para ACUAMED
+        </h4>
+        <p class="max-w-3xl mx-auto text-muted mb-6">
+          Nuestra propuesta de Lakehouse no es solo una arquitectura
+          tecnológica, es la garantía de independencia, transparencia y valor
+          medible para ACUAMED, alineado con las normativas más exigentes.
+        </p>
+        <p class="text-sm text-muted">© 2025 Mindden - ACUAMED</p>
+      </div>
+    </footer>
+
+    <!-- ======================= MODAL ======================= -->
+    <div
+      id="imageModal"
+      class="modal fixed z-[1000] left-0 top-0 w-full h-full overflow-auto"
+    >
+      <span
+        class="close-btn absolute top-4 right-8 text-white text-5xl font-bold transition-colors duration-300 cursor-pointer hover:text-gray-400"
+        onclick="closeModal()"
+        >&times;</span
+      >
+      <div
+        class="modal-container relative h-full w-full flex items-center justify-center"
+      >
+        <img
+          class="modal-content block w-auto max-w-[95%] h-auto max-h-[95%] object-contain"
+          id="modalImage"
+        />
+      </div>
+    </div>
+
+   
+  </body>
+  <script src="js/funciones.js"></script>
+</html>
